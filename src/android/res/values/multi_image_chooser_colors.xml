@@ -2,7 +2,7 @@
 <resources>
     <color name="ic_back_press">#323336</color>
     <color name="ip_color_primary">#393A3F</color>
-    <color name="ip_color_primary_dark">#303135</color>
+    <color name="ip_color_primary_dark">#1485ac</color>
     <color name="ip_color_primary_trans">#2e9dae8f</color>
     <color name="ip_color_press">#2e9dae</color>
     <color name="ip_camera_pre">#353535</color>
@@ -15,5 +15,4 @@
     <color name="ip_crop_handle">#2e9dae</color>
     <color name="ip_pb_color">#1485ac</color>
     <color name="ip_pb_back_color">#2e9dae</color>
-
 </resources>

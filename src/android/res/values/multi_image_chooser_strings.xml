@@ -1,8 +1,8 @@
 <resources>
     <string name="ip_all_images">Tất cả ảnh</string>
-    <string name="ip_folder_image_count">%1$d in total</string>
+    <string name="ip_folder_image_count">%1$d ảnh</string>
     <string name="ip_preview_image_count">%1$d/%2$d</string>
-    <string name="ip_select_limit">%1$d at the most</string>
+    <string name="ip_select_limit">Được chọn tối đa %1$d ảnh</string>
     <string name="ip_complete">Hoàn tất</string>
     <string name="ip_select_complete">Hoàn tất(%1$d/%2$d)</string>
     <string name="ip_preview">Xem trước</string>

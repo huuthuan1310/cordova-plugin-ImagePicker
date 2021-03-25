@@ -272,7 +272,7 @@
     self.cannotSelectLayerColor = [[UIColor whiteColor] colorWithAlphaComponent:0.8];
     self.allowCameraLocation = YES;
     
-    self.iconThemeColor = [UIColor colorWithRed:31 / 255.0 green:185 / 255.0 blue:34 / 255.0 alpha:1.0];
+    self.iconThemeColor = [UIColor colorWithRed:20 / 255.0 green:133 / 255.0 blue:172 / 255.0 alpha:1.0];
     [self configDefaultBtnTitle];
     
     CGFloat cropViewWH = MIN(self.view.tz_width, self.view.tz_height) / 3 * 2;

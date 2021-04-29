@@ -47,12 +47,12 @@
             </feature>
         </config-file>
 
-        <preference name="CAMERA_USAGE_DESCRIPTION" default="拍照上传需要使用相机" />
+        <preference name="CAMERA_USAGE_DESCRIPTION" default="Ứng dụng cần quyền truy cập camera để có thể chụp ảnh" />
         <config-file target="*-Info.plist" parent="NSCameraUsageDescription">
             <string>$CAMERA_USAGE_DESCRIPTION</string>
         </config-file>
 
-        <preference name="PHOTOLIBRARY_USAGE_DESCRIPTION" default="选图上传需要访问相册" />
+        <preference name="PHOTOLIBRARY_USAGE_DESCRIPTION" default="Ứng dụng cần quyền truy cập album ảnh để có thể chọn ảnh" />
         <config-file target="*-Info.plist" parent="NSPhotoLibraryUsageDescription">
             <string>$PHOTOLIBRARY_USAGE_DESCRIPTION</string>
         </config-file>

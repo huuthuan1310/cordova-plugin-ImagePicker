@@ -246,7 +246,6 @@
         <resource-file src="src/android/res/values/multi_image_chooser_colors.xml" target="res/values/multi_image_chooser_colors.xml"/>
         <resource-file src="src/android/res/values/multi_image_chooser_strings.xml" target="res/values/multi_image_chooser_strings.xml"/>
         <resource-file src="src/android/res/values-en/multi_image_chooser_strings.xml" target="res/values-en/multi_image_chooser_strings.xml"/>
-        <resource-file src="src/android/res/values-pt/multi_image_chooser_strings.xml" target="res/values-pt/multi_image_chooser_strings.xml"/>
 
     </platform>
 

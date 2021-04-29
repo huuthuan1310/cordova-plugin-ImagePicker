@@ -18,9 +18,7 @@
   under the License.
 -->
 
-<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-           id="cordova-plugin-imagepicker"
-      version="1.2.2">
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-plugin-imagepicker" version="1.2.2">
 
     <name>ImagePicker</name>
     <description>Cordova ImagePicker Plugin</description>
@@ -61,7 +59,7 @@
 
         <header-file src="src/ios/ImagePickerMain.h"/>
         <source-file src="src/ios/ImagePickerMain.m"/>
-        
+
         <header-file src="src/ios/UIImage+Luban_iOS_Extension_h.h"/>
         <source-file src="src/ios/UIImage+Luban_iOS_Extension_h.m"/>
 
@@ -127,7 +125,7 @@
                 <param name="android-package" value="com.giants.imagepicker.ImagePickerMain"/>
             </feature>
         </config-file>
-        
+
         <!--edit-config 修改 AndroidManifest.xml 添加 android:largeHeap="true" 目前有 bug，改成使用 hook-->
         <!--Cordova-Android 6.0-->
         <!--<edit-config file="AndroidManifest.xml" mode="merge" target="/manifest/application">
@@ -141,28 +139,12 @@
         <hook type="after_prepare" src="hooks/after_prepare/010-update-android-manifest.js" />
 
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
-            <activity
-                    android:name="com.lzy.imagepicker.ui.ImageGridActivity"
-                    android:configChanges="orientation|screenSize"
-                    android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
-            <activity
-                    android:name="com.lzy.imagepicker.ui.ImageCropActivity"
-                    android:configChanges="orientation|screenSize"
-                    android:hardwareAccelerated="false"
-                    android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
-            <activity
-                    android:name="com.lzy.imagepicker.ui.ImagePreviewActivity"
-                    android:configChanges="orientation|screenSize"
-                    android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+            <activity android:name="com.lzy.imagepicker.ui.ImageGridActivity" android:configChanges="orientation|screenSize" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+            <activity android:name="com.lzy.imagepicker.ui.ImageCropActivity" android:configChanges="orientation|screenSize" android:hardwareAccelerated="false" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+            <activity android:name="com.lzy.imagepicker.ui.ImagePreviewActivity" android:configChanges="orientation|screenSize" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
 
-            <provider
-                    android:authorities="${applicationId}.imagepicker.provider"
-                    android:name="com.lzy.imagepicker.ImagePickerProvider"
-                    android:exported="false"
-                    android:grantUriPermissions="true">
-                <meta-data
-                        android:name="android.support.FILE_PROVIDER_PATHS"
-                        android:resource="@xml/imagepicker_provider_paths"/>
+            <provider android:authorities="${applicationId}.imagepicker.provider" android:name="com.lzy.imagepicker.ImagePickerProvider" android:exported="false" android:grantUriPermissions="true">
+                <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/imagepicker_provider_paths"/>
             </provider>
         </config-file>
 
@@ -181,7 +163,7 @@
         </config-file>
 
         <!-- 第三方库 和 sourceCompatibility 1.7 用来支持 diamond 运算符  -->
-		<framework src="src/android/imagepicker.gradle" custom="true" type="gradleReference"/>
+        <framework src="src/android/imagepicker.gradle" custom="true" type="gradleReference"/>
         <source-file src="src/android/module/adapter/ImageFolderAdapter.java" target-dir="src/com/lzy/imagepicker/adapter" />
         <source-file src="src/android/module/adapter/ImagePageAdapter.java" target-dir="src/com/lzy/imagepicker/adapter" />
         <source-file src="src/android/module/adapter/ImageRecyclerAdapter.java" target-dir="src/com/lzy/imagepicker/adapter" />
@@ -214,7 +196,7 @@
         <source-file src="src/android/imageloader/GlideImageLoader.java" target-dir="src/com/giants/imagepicker/imageloader" />
 
         <source-file src="src/android/ImagePickerMain.java" target-dir="src/com/giants/imagepicker" />
-        
+
         <source-file src="src/android/res/xml/imagepicker_provider_paths.xml" target-dir="res/xml"/>
 
         <resource-file src="src/android/res/anim/fade_in.xml" target="res/anim/fade_in.xml"/>
@@ -240,7 +222,7 @@
         <resource-file src="src/android/res/drawable/selector_grid_camera_bg.xml" target="res/drawable/selector_grid_camera_bg.xml"/>
         <resource-file src="src/android/res/drawable/selector_item_checked.xml" target="res/drawable/selector_item_checked.xml"/>
         <resource-file src="src/android/res/drawable/selector_top_ok.xml" target="res/drawable/selector_top_ok.xml"/>
-        
+
         <resource-file src="src/android/res/drawable-v21/bg_folder_item.xml" target="res/drawable-v21/bg_folder_item.xml"/>
 
         <resource-file src="src/android/res/layout/activity_image_crop.xml" target="res/layout/activity_image_crop.xml"/>
@@ -264,6 +246,7 @@
         <resource-file src="src/android/res/values/multi_image_chooser_colors.xml" target="res/values/multi_image_chooser_colors.xml"/>
         <resource-file src="src/android/res/values/multi_image_chooser_strings.xml" target="res/values/multi_image_chooser_strings.xml"/>
         <resource-file src="src/android/res/values-en/multi_image_chooser_strings.xml" target="res/values-en/multi_image_chooser_strings.xml"/>
+        <resource-file src="src/android/res/values-pt/multi_image_chooser_strings.xml" target="res/values-pt/multi_image_chooser_strings.xml"/>
 
     </platform>
 
